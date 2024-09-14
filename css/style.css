@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:where(.container, .container .form-title) {
+  padding: 15px;
+  border: 3px solid #000;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+:is(.fsName legend, .gender legend, .info legend, .status legend) {
+  font-weight: bold;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 2px solid #010;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+:is(.fsName,
+.info,
+.gender,
+.status) {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.fsName div:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 21px;
+  margin: 0 5px;
+}
+
+label {
+  font-size: 18px;
+}
+
+input {
+  padding: 5px;
+}
+
+input[type="image"] {
+  width: 125px;
+}
+
+.container {
+  background-color: #ccc;
+  margin: 15px;
+}
+
+.container :where(div) {
+  margin: 5px 0;
+}
+
+.container .form-title {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.fsName {
+  background-color: wheat;
+}
+
+.gender {
+  padding: 15px;
+}
+
+.drop-list select {
+  width: 120px;
+  font-size: 18px;
+}

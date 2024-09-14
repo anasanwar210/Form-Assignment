@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Assignment 1 { Table }</title>
+  </head>
+  <body>
+    <!-- 
+        Start Form
+      -->
+    <form>
+      <fieldset class="container">
+        <legend class="form-title">Personal Data</legend>
+        <fieldset class="fsName">
+          <legend>Your Name</legend>
+          <form>
+            <table>
+              <tr>
+                <td>
+                  <label for="fName">First Name </label>
+                </td>
+                <td>
+                  <span>:</span>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fName"
+                    id="first-name"
+                    minlength="3"
+                    maxlength="15"
+                    required
+                    placeholder="Required Field"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="fName">Second Name </label>
+                </td>
+                <td><span>:</span></td>
+                <td>
+                  <input
+                    type="text"
+                    name="sName"
+                    id="second-name"
+                    minlength="3"
+                    maxlength="15"
+                    required
+                    placeholder="Required Field"
+                  />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </fieldset>
+        <fieldset class="info">
+          <legend>Information</legend>
+          <table>
+            <tr class="phone-number">
+              <td>
+                <label for="tel">Your Phone</label>
+              </td>
+              <td><span>:</span></td>
+              <td>
+                <input type="tel" name="tel" id="tel" />
+              </td>
+            </tr>
+
+            <tr class="email">
+              <td>
+                <label for="email">E-mail</label>
+              </td>
+              <td><span>:</span></td>
+              <td>
+                <input type="email" name="email" id="email" />
+              </td>
+            </tr>
+
+            <tr class="pass">
+              <td>
+                <label for="pass">Password : </label>
+              </td>
+              <td>
+                <span>:</span>
+              </td>
+              <td>
+                <input type="password" name="pass" id="pass" />
+              </td>
+            </tr>
+            <tr class="re-pass">
+              <td>
+                <label for="re-pass">Re-Password</label>
+              </td>
+              <td><span>:</span></td>
+              <td>
+                <input type="password" name="re-pass" id="re-pass" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <br />
+        <fieldset class="gender">
+          <legend>Choose Your Grnder</legend>
+          <input type="radio" name="gen" id="male" value="male" />
+          <label for="male">Male</label>
+          <br />
+          <input
+            type="radio"
+            name="gen"
+            id="female"
+            value="
+            female"
+          />
+          <label for="female">Female</label>
+        </fieldset>
+        <br />
+        <fieldset class="status">
+          <legend>Status</legend>
+          <input type="checkbox" name="stat" id="student" value="student" />
+          <label for="student">Student</label>
+          <br />
+          <input type="checkbox" name="stat" id="graduated" value="graduated" />
+          <label for="graduated">Graduated</label>
+        </fieldset>
+
+        <div class="drop-list">
+          <select name="test" id="from">
+            <optgroup label="Cairo">
+              <option value="ataba">Ataba</option>
+              <option value="Gamalia">Gamalia</option>
+              <option value="Roxi">Roxe</option>
+            </optgroup>
+            <optgroup label="Alex">
+              <option value="el-raml">El-raml</option>
+              <option value="gobrial">Gobrial</option>
+            </optgroup>
+          </select>
+        </div>
+        <input type="image" src="images/submit.jpg" alt="submit" />
+      </fieldset>
+    </form>
+
+    <!-- 
+        End Form
+      -->
+  </body>
+</html>
